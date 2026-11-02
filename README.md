@@ -1,11 +1,11 @@
-# nlp_jd223
+# tensor_parallel_split_pattern_locate
 
 **用规则在NLP 算法工程师·张量并行切分策略里定位可疑位置。**
 
-`nlp_jd223` —— 用一组明示的正则规则扫描输入，报告NLP 算法工程师·张量并行切分策略相关的命中行与片段
+`tensor_parallel_split_pattern_locate` —— 用一组明示的正则规则扫描输入，报告NLP 算法工程师·张量并行切分策略相关的命中行与片段
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`nlp_jd223.py` 拷走就能用
+- 单文件，`tensor_parallel_split_pattern_locate.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install achernasz-nlp_jd223
+pip install achernasz-tensor_parallel_split_pattern_locate
 ```
 
 装完直接用命令名调用：
 
 ```bash
-nlp_jd223 --help
+tensor_parallel_split_pattern_locate --help
 ```
 
-也可以不用安装，直接把 `nlp_jd223.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `tensor_parallel_split_pattern_locate.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ nlp_jd223 --help
 ## 用法
 
 ```bash
-python nlp_jd223.py --file input.txt
-python nlp_jd223.py --text "示例内容"
-python nlp_jd223.py --file input.txt --json
+python tensor_parallel_split_pattern_locate.py --file input.txt
+python tensor_parallel_split_pattern_locate.py --text "示例内容"
+python tensor_parallel_split_pattern_locate.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python nlp_jd223.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_nlp_jd223.py
+python test_tensor_parallel_split_pattern_locate.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_nlp_jd223.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/achernasz/nlp_jd223>
+- GitHub 仓库：<https://github.com/achernasz/tensor_parallel_split_pattern_locate>
 
 ---
 
@@ -79,7 +79,7 @@ python test_nlp_jd223.py
 achernasz 做NLP 算法工程师·张量并行切分策略相关的问题，方向对标网易的专家NLP 算法工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://achernasz.github.io>
-- 仓库：<https://github.com/achernasz/nlp_jd223>
+- 仓库：<https://github.com/achernasz/tensor_parallel_split_pattern_locate>
 
 ## 许可
 
